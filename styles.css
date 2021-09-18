@@ -554,7 +554,9 @@ color: var(--green);
      line-height: 1.8rem;
  }
 
-
+.order{
+    background: #eee;
+}
 
 .order form{
    max-width: 90rem;
@@ -596,7 +598,7 @@ color: var(--light-color);
 
 .order form .inputBox .input input:focus,
 .order form .inputBox .input textarea:focus{
-    
+    border: .1rem solid --green;
 }
 
 
@@ -615,8 +617,55 @@ resize: none;
 
 
 
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    gap: 1.5rem;
+    border: none;
+}
+.footer .box-container .box {
+    border: none;
+    box-shadow: none;
+}
 
+.footer .box-container .box h3{
+    padding: .5rem 0;
+    font-size: 3.5rem;
+    color:var(--black) ;
+    border: none;
 
+}
+
+.footer .box-container .box a{
+display: block;
+padding: .5rem 0;
+font-size: 2rem;
+color: var(--light-color);
+    border: none;
+}
+
+.footer .box-container .box a:hover{
+    color: var(--green);
+    cursor: pointer;
+}
+.footer .box-container a i{
+    color: black;
+
+}
+
+.footer .credits{
+    text-align: center;
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+    font-size: 2rem;
+    color: var(--black);
+    padding: .5rem;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.footer .credits span{
+    color: var(--green);
+}
 
 
 
