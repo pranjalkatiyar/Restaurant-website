@@ -257,7 +257,7 @@ header .icons #menu-bars {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
     gap: 1.5rem;
-    padding: 2rem 15rem;
+    padding: 2rem 12rem;
 
 }
 
@@ -420,7 +420,7 @@ color: var(--black);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
-    padding: 2rem 15rem;
+    padding: 2rem 12rem;
 } 
 
 .menu .box-container .box{
@@ -556,6 +556,64 @@ color: var(--green);
 
 
 
+.order form{
+   max-width: 90rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+border: .1rem solid rgba(0, 0, 0, .2);
+background: #fff;
+padding: 1.5rem;
+margin: 0 auto;
+}
+
+.order form .inputBox{
+    display:flex;
+     flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+.order form .inputBox .input{
+    width: 49%;
+}
+
+.order form .inputBox .input span{
+display: block;
+padding:.5rem 0 ;
+font-size:1.5rem;
+color: var(--light-color);
+}
+
+.order form .inputBox .input input,
+.order form .inputBox .input textarea{
+    background: #eee;
+     padding: 1rem;
+     font-size: 1.6rem;
+     color: var(--black);
+     text-transform: none;
+     margin-bottom: 1rem;
+     width: 100%;
+}
+
+.order form .inputBox .input input:focus,
+.order form .inputBox .input textarea:focus{
+    
+}
+
+
+
+
+.order form .inputBox .input textarea{
+
+height: 20rem;
+resize: none;
+
+}
+
+.order form .inputBox{
+    margin-top: 0;
+}
+
+
 
 
 
@@ -586,18 +644,7 @@ color: var(--green);
     }
 }
 
-@media (max-width:395px)
-{
-    .menu .box-container{
-        padding: 2rem 4rem;
 
-    }
-    .dishes .box-container{
-        padding: 2rem 8rem;
-    }
-
-
-}
 
 @media (max-width:768px) {
     header .icons #menu-bars {
@@ -657,6 +704,25 @@ color: var(--green);
        width: 100%;
     
     }
+    .order form .inputBox .input{
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width:475px)
+{
+    
+    .dishes .box-container{
+        padding: 2rem 8rem;
+    }
+    .menu .box-container{
+        padding: 2rem 0rem;
+
+    }
+
+
 }
 
 @media (max-width:320px)
@@ -670,4 +736,3 @@ color: var(--green);
     }
 }
 }
-
