@@ -35,3 +35,31 @@ var swiper = new Swiper(".home-slider", {
     },
     loop:true,
   });
+
+  var swiper = new Swiper(".review-slider", {
+    spaceBetween: 40,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    loop:true,
+    breakpointe:{
+      0:{
+      slidesPerView:1,
+      },
+     640:{
+        slidesPerView:2,
+        },
+        768:{
+          slidesPerView:2,
+          },
+         1024:{
+            slidesPerView:3,
+            }
+    }
+  });
