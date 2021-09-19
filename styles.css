@@ -420,7 +420,7 @@ color: var(--black);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
-    padding: 2rem 12rem;
+    padding: 2rem 15rem;
 } 
 
 .menu .box-container .box{
@@ -428,6 +428,8 @@ color: var(--black);
     border: .1rem solid rgba(0, 0, 0, .2);
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
+    text-align: center;
+    padding-bottom: 2.5rem;
 
 }
 
@@ -451,7 +453,7 @@ object-fit: cover;
 .menu .box-container .box .image .fa-heart{
 position: absolute;
 top: 2.5rem;
-right: 2.5rem;
+right: 1.5rem;
 height: 5rem;
 width: 5rem;
 line-height: 5rem;
@@ -472,11 +474,11 @@ color:#fff;
     padding-top: 0;
 }
 
-.menu .box-container .box .content .stars {
+.menu .box-container .box .content .stars{
    padding-bottom: 1rem;
 }
 
-.menu .box-container .box .content .stars  i{
+.menu .box-container .box .content .stars i{
     font-size: 1.8rem;
     color: var(--green);
  }
@@ -667,9 +669,29 @@ color: var(--light-color);
     color: var(--green);
 }
 
+.loader-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index:10000 ;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 
+}
 
+.loader-container img{
+    width: 35rem;
+}
 
+.loader-container.fade-out{
+top: 110%;
+opacity: 0;
+}
 
 /* media queries */
 @media (max-width:991px) {
