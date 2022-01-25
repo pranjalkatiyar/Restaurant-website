@@ -1,6 +1,6 @@
 # **Netflix Clone**
 
-> It is a resturant front end fully responsive website hosted on the github pages
+> It is a restaurant front end fully responsive website hosted on the github pages
 
 ## **Quick Links**
 
